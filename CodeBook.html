@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=9" >
+
+<title>Introduction</title>
+
+<style type="text/css">
+body, td {
+   font-family: sans-serif;
+   background-color: white;
+   font-size: 12px;
+   margin: 8px;
+}
+
+tt, code, pre {
+   font-family: 'DejaVu Sans Mono', 'Droid Sans Mono', 'Lucida Console', Consolas, Monaco, monospace;
+}
+
+h1 { 
+   font-size:2.2em; 
+}
+
+h2 { 
+   font-size:1.8em; 
+}
+
+h3 { 
+   font-size:1.4em; 
+}
+
+h4 { 
+   font-size:1.0em; 
+}
+
+h5 { 
+   font-size:0.9em; 
+}
+
+h6 { 
+   font-size:0.8em; 
+}
+
+a:visited {
+   color: rgb(50%, 0%, 50%);
+}
+
+pre {	
+   margin-top: 0;
+   max-width: 95%;
+   border: 1px solid #ccc;
+   white-space: pre-wrap;
+}
+
+pre code {
+   display: block; padding: 0.5em;
+}
+
+code.r, code.cpp {
+   background-color: #F8F8F8;
+}
+
+table, td, th {
+  border: none;
+}
+
+blockquote {
+   color:#666666;
+   margin:0;
+   padding-left: 1em;
+   border-left: 0.5em #EEE solid;
+}
+
+hr {
+   height: 0px;
+   border-bottom: none;
+   border-top-width: thin;
+   border-top-style: dotted;
+   border-top-color: #999999;
+}
+
+@media print {
+   * { 
+      background: transparent !important; 
+      color: black !important; 
+      filter:none !important; 
+      -ms-filter: none !important; 
+   }
+
+   body { 
+      font-size:12pt; 
+      max-width:100%; 
+   }
+       
+   a, a:visited { 
+      text-decoration: underline; 
+   }
+
+   hr { 
+      visibility: hidden;
+      page-break-before: always;
+   }
+
+   pre, blockquote { 
+      padding-right: 1em; 
+      page-break-inside: avoid; 
+   }
+
+   tr, img { 
+      page-break-inside: avoid; 
+   }
+
+   img { 
+      max-width: 100% !important; 
+   }
+
+   @page :left { 
+      margin: 15mm 20mm 15mm 10mm; 
+   }
+     
+   @page :right { 
+      margin: 15mm 10mm 15mm 20mm; 
+   }
+
+   p, h2, h3 { 
+      orphans: 3; widows: 3; 
+   }
+
+   h2, h3 { 
+      page-break-after: avoid; 
+   }
+}
+
+</style>
+
+
+
+
+
+</head>
+
+<body>
+<h3>Introduction</h3>
+
+<p>This file describes the data, the variables, and the work that has been performed to clean up the data.</p>
+
+<h3>Data Set Description</h3>
+
+<p>The experiments have been carried out with a group of 30 volunteers within an age bracket of 19-48 years. Each person performed six activities (WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING) wearing a smartphone (Samsung Galaxy S II) on the waist. Using its embedded accelerometer and gyroscope, we captured 3-axial linear acceleration and 3-axial angular velocity at a constant rate of 50Hz. The experiments have been video-recorded to label the data manually. The obtained dataset has been randomly partitioned into two sets, where 70% of the volunteers was selected for generating the training data and 30% the test data. </p>
+
+<p>The sensor signals (accelerometer and gyroscope) were pre-processed by applying noise filters and then sampled in fixed-width sliding windows of 2.56 sec and 50% overlap (128 readings/window). The sensor acceleration signal, which has gravitational and body motion components, was separated using a Butterworth low-pass filter into body acceleration and gravity. The gravitational force is assumed to have only low frequency components, therefore a filter with 0.3 Hz cutoff frequency was used. From each window, a vector of features was obtained by calculating variables from the time and frequency domain. </p>
+
+<h4>For each record it is provided:</h4>
+
+<ul>
+<li>Triaxial acceleration from the accelerometer (total acceleration) and the estimated body acceleration.</li>
+<li>Triaxial Angular velocity from the gyroscope. </li>
+<li>A 561-feature vector with time and frequency domain variables. </li>
+<li>Its activity label. </li>
+<li>An identifier of the subject who carried out the experiment.</li>
+</ul>
+
+<h4>The dataset includes the following files:</h4>
+
+<ul>
+<li>&#39;features_info.txt&#39;: Shows information about the variables used on the feature vector.</li>
+<li>&#39;features.txt&#39;: List of all features.</li>
+<li>&#39;activity_labels.txt&#39;: Links the class labels with their activity name.</li>
+<li>&#39;train/X_train.txt&#39;: Training set.</li>
+<li>&#39;train/y_train.txt&#39;: Training labels.</li>
+<li>&#39;test/X_test.txt&#39;: Test set.</li>
+<li>&#39;test/y_test.txt&#39;: Test labels.</li>
+<li>&#39;train/subject_train.txt&#39;: Each row identifies the subject who performed the activity for each window sample. Its range is from 1 to 30. </li>
+<li>&#39;train/Inertial Signals/total_acc_x_train.txt&#39;: The acceleration signal from the smartphone accelerometer X axis in standard gravity units &#39;g&#39;. Every row shows a 128 element vector. The same description applies for the &#39;total_acc_x_train.txt&#39; and &#39;total_acc_z_train.txt&#39; files for the Y and Z axis. </li>
+<li>&#39;train/Inertial Signals/body_acc_x_train.txt&#39;: The body acceleration signal obtained by subtracting the gravity from the total acceleration. </li>
+<li>&#39;train/Inertial Signals/body_gyro_x_train.txt&#39;: The angular velocity vector measured by the gyroscope for each window sample. The units are radians/second. </li>
+</ul>
+
+<h3>Variables</h3>
+
+<p>The features selected for this database come from the accelerometer and gyroscope 3-axial raw signals tAcc-XYZ and tGyro-XYZ. These time domain signals (prefix &#39;t&#39; to denote time) were captured at a constant rate of 50 Hz. Then they were filtered using a median filter and a 3rd order low pass Butterworth filter with a corner frequency of 20 Hz to remove noise. Similarly, the acceleration signal was then separated into body and gravity acceleration signals (tBodyAcc-XYZ and tGravityAcc-XYZ) using another low pass Butterworth filter with a corner frequency of 0.3 Hz. </p>
+
+<p>Subsequently, the body linear acceleration and angular velocity were derived in time to obtain Jerk signals (tBodyAccJerk-XYZ and tBodyGyroJerk-XYZ). Also the magnitude of these three-dimensional signals were calculated using the Euclidean norm (tBodyAccMag, tGravityAccMag, tBodyAccJerkMag, tBodyGyroMag, tBodyGyroJerkMag). </p>
+
+<p>Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing fBodyAcc-XYZ, fBodyAccJerk-XYZ, fBodyGyro-XYZ, fBodyAccJerkMag, fBodyGyroMag, fBodyGyroJerkMag. (Note the &#39;f&#39; to indicate frequency domain signals). </p>
+
+<p>These signals were used to estimate variables of the feature vector for each pattern:<br/>
+&#39;-XYZ&#39; is used to denote 3-axial signals in the X, Y and Z directions.</p>
+
+<h3>Work/Transformations</h3>
+
+<h4>Load test and training sets and the activities</h4>
+
+<p>The data set has been stored in the <code>UCI HAR Dataset/</code> directory.</p>
+
+<p>The CDN url provided by the instructor is used instead of the original location, to offload the traffic to the UCI server.</p>
+
+<p>The <code>unzip</code> function is used to extract the zip file in this directory.</p>
+
+<pre><code>fileUrl &lt;- &quot;https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip&quot;
+download.file(fileUrl, destfile = &quot;Dataset.zip&quot;, method = &quot;curl&quot;)
+unzip(&quot;Dataset.zip&quot;)
+</code></pre>
+
+<p><code>read.table</code> is used to load the data to R environment for the data, the activities and the subject of both test and training datasets.</p>
+
+<pre><code>testData &lt;- read.table(&quot;./UCI HAR Dataset/test/X_test.txt&quot;,header=FALSE)
+testData_act &lt;- read.table(&quot;./UCI HAR Dataset/test/y_test.txt&quot;,header=FALSE)
+testData_sub &lt;- read.table(&quot;./UCI HAR Dataset/test/subject_test.txt&quot;,header=FALSE)
+trainData &lt;- read.table(&quot;./UCI HAR Dataset/train/X_train.txt&quot;,header=FALSE)
+trainData_act &lt;- read.table(&quot;./UCI HAR Dataset/train/y_train.txt&quot;,header=FALSE)
+trainData_sub &lt;- read.table(&quot;./UCI HAR Dataset/train/subject_train.txt&quot;,header=FALSE)
+</code></pre>
+
+<h4>Descriptive activity names to name the activities in the data set</h4>
+
+<p>The class labels linked with their activity names are loaded from the <code>activity_labels.txt</code> file. The numbers of the <code>testData_act</code> and <code>trainData_act</code> data frames are replaced by those names:</p>
+
+<pre><code>activities &lt;- read.table(&quot;./UCI HAR Dataset/activity_labels.txt&quot;,header=FALSE,colClasses=&quot;character&quot;)
+testData_act$V1 &lt;- factor(testData_act$V1,levels=activities$V1,labels=activities$V2)
+trainData_act$V1 &lt;- factor(trainData_act$V1,levels=activities$V1,labels=activities$V2)
+</code></pre>
+
+<h4>Appropriately labels the data set with descriptive activity names</h4>
+
+<p>Each data frame of the data set is labeled - using the <code>features.txt</code> - with the information about the variables used on the feature vector. The <code>Activity</code> and <code>Subject</code> columns are also named properly before merging them to the test and train dataset.</p>
+
+<pre><code>features &lt;- read.table(&quot;./UCI HAR Dataset/features.txt&quot;,header=FALSE,colClasses=&quot;character&quot;)
+colnames(testData)&lt;-features$V2
+colnames(trainData)&lt;-features$V2
+colnames(testData_act)&lt;-c(&quot;Activity&quot;)
+colnames(trainData_act)&lt;-c(&quot;Activity&quot;)
+colnames(testData_sub)&lt;-c(&quot;Subject&quot;)
+colnames(trainData_sub)&lt;-c(&quot;Subject&quot;)
+</code></pre>
+
+<h4>Merge test and training sets into one data set, including the activities</h4>
+
+<p>The <code>Activity</code> and <code>Subject</code> columns are appended to the test and train data frames, and then are both merged in the <code>bigData</code> data frame.</p>
+
+<pre><code>testData&lt;-cbind(testData,testData_act)
+testData&lt;-cbind(testData,testData_sub)
+trainData&lt;-cbind(trainData,trainData_act)
+trainData&lt;-cbind(trainData,trainData_sub)
+bigData&lt;-rbind(testData,trainData)
+</code></pre>
+
+<h4>Extract only the measurements on the mean and standard deviation for each measurement</h4>
+
+<p><code>mean()</code> and <code>sd()</code> are used against <code>bigData</code> via <code>sapply()</code> to extract the requested measurements.</p>
+
+<pre><code>bigData_mean&lt;-sapply(bigData,mean,na.rm=TRUE)
+bigData_sd&lt;-sapply(bigData,sd,na.rm=TRUE)
+</code></pre>
+
+<p>A warning is returned for the <code>Activity</code> column because it&#39;s not numeric. This does not impact the calcucation of the rest and NA is stored in the new data frames instead, since mean and sd are not applicable in this case. The same applies for <code>Subject</code> where we&#39;re not interested about the mean and sd, but since it&#39;s numeric already there is no warning.</p>
+
+<h4>Creates a second, independent tidy data set with the average of each variable for each activity and each subject.</h4>
+
+<p>Finaly the desired result, a <code>tidy</code> data table is created with the average of each measurement per activity/subject combination. The new dataset is saved in <code>tidy.csv</code> file.</p>
+
+<pre><code>DT &lt;- data.table(bigData)
+tidy&lt;-DT[,lapply(.SD,mean),by=&quot;Activity,Subject&quot;]
+write.table(tidy,file=&quot;tidy.csv&quot;,sep=&quot;,&quot;,col.names = NA)
+</code></pre>
+
+</body>
+
+</html>
+
